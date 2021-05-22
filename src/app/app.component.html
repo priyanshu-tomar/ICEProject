@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content= "width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    </head>
+    <body data-spy='scroll' data-target= '.navbar' data-offset = '40'>
+      <nav class="navbar navbar-inverse 
+                         navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button" class="navbar-toggle" data-target="#myNavbar"  data-toggle="collapse" >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> 
+            <a class="navbar-brand" href="#">CSE2ICE AFL</a>
+        </div>
+        <div>
+            <div >
+              <ul class="nav navbar-nav">
+                  <li><a href="#P1">Teams</a></li>
+                  <li><a href="#P2">Win Predictions</a></li>
+                  <li><a href="#P3">Results</a></li>
+                  <li><a href="#P4">Fixtures</a></li>
+                  <li><a href="#P5">Winning Venues</a></li>
+                  <li><a href="#P6">Rivals</a></li>
+                  <li><a href="#P7">Points Table</a></li>
+                  <li><a href="#P8">Games Lost</a></li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div id="P1" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h1></h1>
+      <div><app-team></app-team></div>
+    </div>
+  </div>
+
+
+  <div id="P2" class="container-fluid">
+    <div style="padding-left: 1%; align-items: center;">
+      <h3>Win Predictions</h3>
+      <div><app-game-prediction>
+      </app-game-prediction></div>
+    </div>
+  </div>
+
+
+  <div id="P3" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h3>Results</h3>
+      <div><app-my-team-results>
+      </app-my-team-results></div>
+    </div>
+  </div>
+
+
+  <div id="P4" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h3>Next 4 fixtures</h3>
+      <div><app-my-team-next-games>
+      </app-my-team-next-games></div>
+    </div>
+  </div>
+
+
+  <div id="P5" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h3>Winning Venues</h3>
+      <div><app-my-team-win-venues>
+      </app-my-team-win-venues></div>
+    </div>
+  </div>
+
+
+  <div id="P6" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h3>Rivals</h3>
+      <div><app-my-team-rival-results>
+      </app-my-team-rival-results></div>
+    </div>
+  </div>
+
+
+  <div id="P7" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h3>Points Table</h3>
+      <div><app-points-table>
+      </app-points-table></div>
+    </div>
+  </div>
+
+  
+  <div id="P8" class="container-fluid">
+    <div style="padding-left: 1%;">
+      <h3>Games Lost by Teams</h3>
+      <div><app-my-team-lost-games>
+      </app-my-team-lost-games></div>
+    </div>
+  </div>
+</body>
+
+<style>
+    body {
+      position: relative;
+    }
+    #P1 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P2 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P3 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P4 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P5 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P6 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P7 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+
+    #P8 {
+        background-color: #c5b1e9;
+        padding-top: 60px;
+        color: rgb(12, 1, 1);
+        min-height: 650px;
+    }
+  </style>
+</html>

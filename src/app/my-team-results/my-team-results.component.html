@@ -1,0 +1,40 @@
+<body>
+    <div>
+      <div style="padding: 1.2%; border-bottom: 2.4cm;">
+        <label>Select Team  </label>
+        <select (change)="filterMyresult($event.target.value)">
+          <option value="0">--Select--</option>
+          <option *ngFor="let a of Teams" value="{{ a.name }}">
+            {{ a.name }}
+          </option>
+        </select>
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope=' col'>Round</th>
+                <th scope=' col'>Home Team</th>
+                <th scope=' col'>Away Team</th>
+                <th scope=' col'>Score</th>
+                <th scope=' col'>Winner</th>
+                <th scope=' col'>Date</th>
+                <th scope=' col'>Venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let a of gameResults">
+                <td>{{ a.round }}</td>
+                <td>{{ a.hteam }}</td>
+                <td>{{ a.ateam }}</td>
+                <td>{{a.hscore}}-{{a.ascore}}</td>
+                <td>{{ a.winner }}</td>
+                <td>{{ a.date }}</td>
+                <td>{{ a.venue }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  

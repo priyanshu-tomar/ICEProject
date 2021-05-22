@@ -1,0 +1,28 @@
+<body>
+    <div>
+      <div style="padding: 1.2%; border-bottom: 2.4cm;">
+        <label>Select Team -->  </label>
+        <select (change)="filterMyresult($event.target.value)">
+          <option value="0">--Select--</option>
+          <option *ngFor="let a of Teams" value="{{ a.name }}">
+            {{ a.name }}
+          </option>
+        </select>
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope=' col'>Venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let a of gameResults">
+                <td>{{ a.venue }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  
